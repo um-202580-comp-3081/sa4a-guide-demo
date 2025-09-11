@@ -3,9 +3,9 @@ from task_manager import TaskManager
 def main():
     manager = TaskManager()
 
-    manager.add_task("Write documentation", "Update README with usage instructions")
+    manager.add_task("Write documentation", "Update README with usage instructions", "High")
     manager.add_task("Fix bug in login", "Handle empty password case")
-    manager.add_task("Review pull request")
+    manager.add_task("Review pull request", priority="Low")
 
     print("\nPending Tasks:")
 

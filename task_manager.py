@@ -4,8 +4,8 @@ class TaskManager:
     def __init__(self):
         self.tasks = []
     
-    def add_task(self, title, description=""):
-        task = Task(title, description)
+    def add_task(self, title, description="", priority="Medium"):
+        task = Task(title, description, priority)
         self.tasks.append(task)
         return task
     
